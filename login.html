@@ -20,7 +20,7 @@
             position:absolute;
             left: 250px;
             top: 300px; */
-        }
+        /* } */
         .class1{
             position:absolute;
             left: 800px;
@@ -30,20 +30,21 @@
             font-size: 20px;
             color: aqua;
         }
+        
     </style>
 <body>
     <h1>Welcome To Your List!!</h1>
-    <form action="">
+    <form action="sertin.php" method="POST"> 
         <div style="text-align:center; vertical-align:middle">
-            <input  type="email" placeholder="账号" size="50px">
+            <input  type="email" placeholder="账号" size="50px" name="username">
         </div>
         <br>
         <div style="text-align:center; vertical-align:middle">
-            <input  type="password" placeholder="密码" size="50px">
+            <input  type="password" placeholder="密码" size="50px" name="passwordbase">
             </div>
         <br>
         <div style="text-align:center; vertical-align:middle">
-                <input  type="submit" value="登陆">
+                <input  type="submit" value="登录">
              </div>
     </form>
     <a href="register.html" class="class1">没有账号？赶紧加入我们吧！！</a>
