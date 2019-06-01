@@ -12,7 +12,7 @@ if (!$conn) {
 }
  
 // 使用 sql 创建数据表
-$sql = "CREATE TABLE MyGuests (
+$sql = "CREATE TABLE user (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
 username VARCHAR(30) NOT NULL,
 passwordbase VARCHAR(30) NOT NULL
