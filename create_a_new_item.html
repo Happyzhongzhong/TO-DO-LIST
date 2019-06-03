@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Creatnew</title>
+    <style>
+            h1 {
+                text-align: center;
+                font-size: 50px;
+                line-height: 100px;
+                margin-top: 50px;
+                font-weight: lighter;
+            }
+            p {
+                font-size: 30px;
+            }
+            .class1 {
+                width: 500;
+                height: 50px;
+                background-color: darkgray;
+                font-size: 20px;
+                border-style: hidden;
+                border-radius: 10px/10px;
+            }
+            .class2 {
+                font-size: 40px;
+                height: 40px;
+                width: 20;
+                font-weight: lighter;
+                border-style: none;
+                text-align: center;
+            }
+            .class1:hover {
+                background-color: aliceblue;
+                transition-duration: 500ms;
+            }
+            .class3 {
+                opacity: 0;
+                text-align: center;
+                position: absolute;
+                left: 0;
+                right: 0;
+                transition: all 500ms linear 500ms;
+            }
+            .btn-container {
+                width: 350;
+                height: 50;
+                margin: 0 auto;
+            }
+            .btn-container:hover .class3{
+                opacity: 1;
+                font-size: 20px;
+            }
+            .class4 {
+                width:200px;
+            }
+        </style>
+</head>
+<body>
+        <h1>A plan is where to start</h1>
+        <form action="serin_for_items.php" method="POST">
+            <div style="text-align:center; vertical-align:middle">
+                <input type="text" name="title" placeholder="please input the title"  class="class2" > 
+            </div>
+            <hr>
+            <div style="text-align:center; vertical-align:middle">
+                <p>when to begin?</p>
+            </div>
+            <div style="text-align:center;">
+                <input type="datetime-local" class="class4" name="time">
+            </div>
+            <div style="text-align:center; vertical-align:middle">
+                <p>how often?</p>
+            </div>
+            <div style="text-align:center;">
+                <input type="radio" name="frequency" value="0" checked>never
+                <input type="radio" name="frequency" value="1">daily
+                <input type="radio" name="frequency" value="2">on weekends
+                <input type="radio" name="frequency" value="3">on weekdays
+                <input type="radio" name="frequency" value="4">mothly
+            </div>
+            <div style="text-align:center; vertical-align:middle">
+                <p>say something!</p>
+            </div>
+            <div style="text-align:center;">
+<textarea type="text" name="description" class="class4">
+</textarea>
+                <br>
+            </div>
+            <br>
+            <div style="text-align:center; vertical-align:middle">
+                <div class="btn-container"> 
+                    <input type="submit" value="create" class="class1">
+                    <p class="class3">if you have any problem, please go to www.zhongzhong.com</p>
+                </div>
+            </div>
+        </form>
+    
+</body>
+</html>

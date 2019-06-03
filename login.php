@@ -3,6 +3,7 @@
 session_start();
 //  声明一个名为 admin 的变量，并赋空值。
 $_SESSION["admin"] = null;
+$_SESSION["username"] = null;
 ?>
 
 <?php
@@ -29,7 +30,9 @@ try {
         if($num){
             //  注册登陆成功的 admin 变量，并赋值 true
             $_SESSION["admin"] = true;
+            $_SESSION["username"] = $username;
             echo "欢迎回来，每一天都是新的开始。";
+            echo '<a href="create_a_new_item.html">点击进入你的主页</a>';
         }
         else{
             echo "用户名或密码错误，请返回重新输入";
